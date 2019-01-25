@@ -1,0 +1,8 @@
+finalrkauanoe: finalrkauanoe.o printbits.o
+	gcc finalrkauanoe.o printbits.o -o finalrkauanoe -lm -fPIC
+
+finalrkauanoe.o: finalrkauanoe.c printbits.h
+	gcc -c finalrkauanoe.c
+
+printbits.o: printbits.c printbits.h
+	gcc -c printbits.c
